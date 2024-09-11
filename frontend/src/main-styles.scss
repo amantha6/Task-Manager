@@ -1,0 +1,64 @@
+// Import Fonts (Lato and Nunito)
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+// Define color palette
+$purple: #7a57d1;
+$light-purple: #9d85f7;
+$dark-purple: #4e3188;
+$very-light-purple: #f3f0ff;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif; // Using Nunito for a cleaner look
+$primary: $purple;
+$link: $light-purple;
+
+// Update Bulma's component variables
+$control-border-width: 1px; // Thinner borders for a more refined look
+$input-border-color: $light-purple;
+$input-shadow: none; // Removing shadows for a flatter design
+
+// Set custom global styles for a minimalistic design
+html, body {
+    height: 100%;
+    background: linear-gradient(to right top, $very-light-purple, $light-purple);
+    font-family: $family-sans-serif;
+    color: $dark-purple; // Using dark purple for text to ensure readability
+}
+
+// Simplified styling for elements
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+// Minimalistic styling for common components
+button, input, textarea {
+    border: 1px solid $purple;
+    background: transparent;
+    color: $dark-purple;
+}
+
+button:hover, input:hover, textarea:hover {
+    background-color: $light-purple;
+    color: $very-light-purple;
+}
+
+// Link styles
+a {
+    color: $purple;
+    text-decoration: none; // No underline for a cleaner look
+}
+
+a:hover {
+    color: $light-purple;
+    text-decoration: underline; // Subtle interaction feedback
+}
+
+// General utility classes for common padding and margin
+.padding-small {
+    padding: 8px;
+}
+
+.margin-small {
+    margin: 8px;
+}
