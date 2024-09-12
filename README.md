@@ -47,6 +47,4 @@ This project is a **Task Manager** application developed using **Angular**, **No
 
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request. Please ensure all new features are tested before submission.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
