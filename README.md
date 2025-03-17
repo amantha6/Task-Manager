@@ -1,7 +1,7 @@
 # Task Management Application
 
 A modern, responsive task management application built with Next.js, React 19, TypeScript, and Tailwind CSS. This project uses the Shadcn UI component library for a clean, accessible interface.
-
+https://task-manager-jyxz.vercel.app/
 ## Features
 
 - Task creation, editing, and management
