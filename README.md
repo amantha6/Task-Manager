@@ -1,50 +1,122 @@
-# Task Manager Application
+# Task Management Application
 
-This project is a **Task Manager** application developed using **Angular**, **NodeJS**, and **MongoDB**. The application offers users the ability to manage their tasks efficiently with features like task creation, editing, and deletion. It also provides a clean and modern user interface, styled with **Bulma**, a popular CSS framework.
-
-## Project Structure
-
-### Frontend
-
-- The frontend is built using **Angular** and uses **SCSS** for styling.
-- **Bulma** is used as the CSS framework to ensure a responsive and visually appealing user interface.
-- The application has routing enabled for navigation between different pages.
-- It includes a task management page (`TaskView`) where users can manage their tasks.
-
-### Backend
-
-- The backend is powered by **NodeJS** and **Express** to handle RESTful API requests.
-- It interacts with a **MongoDB** database using **Mongoose** for data persistence.
-- The API handles all CRUD (Create, Read, Update, Delete) operations for task management.
-
-### Database
-
-- **MongoDB** is used as the database to store task data.
-- You can either use a local instance of MongoDB or set up a cloud database using services like **MongoDB Atlas**.
+A modern, responsive task management application built with Next.js, React 19, TypeScript, and Tailwind CSS. This project uses the Shadcn UI component library for a clean, accessible interface.
 
 ## Features
 
-- **Task Management**: Users can create, update, view, and delete tasks.
-- **Routing**: The app uses Angular's built-in routing to navigate between different views seamlessly.
-- **Responsive Design**: The interface is mobile-friendly, thanks to the integration of **Bulma**.
-- **Persistent Storage**: Tasks are stored in a MongoDB database for future retrieval.
-- **REST API**: The backend provides a RESTful API to interact with the task data.
+- Task creation, editing, and management
+- Modern, responsive UI with dark mode support
+- Built with accessibility in mind
+- Type-safe with TypeScript
+- Styled with Tailwind CSS and customizable theming
+
+## Tech Stack
+
+- **Framework**: Next.js 15.1.0
+- **Language**: TypeScript
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS with CSS variables for theming
+- **Components**: Shadcn UI with Radix UI primitives
+- **Form Handling**: React Hook Form with Zod validation
+- **Charting**: Recharts
+- **Icons**: Lucide React
 
 ## Getting Started
 
-1. **Clone the repository**.
-2. Set up the **frontend** and **backend** by installing the necessary dependencies.
-3. Configure the **MongoDB** connection for the backend.
-4. Start the frontend and backend servers.
-5. Access the application in your browser to start managing tasks.
+### Prerequisites
 
-## Screenshots
+- Node.js 18.x or higher
+- pnpm (recommended) or npm
 
-![image](https://github.com/user-attachments/assets/a430de59-601c-4881-a570-1f79b8ba110e)
+### Installation
 
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd task-management
+   ```
 
-## Contributing
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request. Please ensure all new features are tested before submission.
+3. Run the development server:
+   ```bash
+   pnpm dev
+   ```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
+## Project Structure
+
+```
+├── app                 # Next.js app directory
+│   ├── globals.css     # Global CSS and theming
+│   ├── layout.tsx      # Root layout component
+│   └── page.tsx        # Home page component
+├── components          # UI components
+│   ├── ui              # Shadcn UI components
+│   └── task-manager.tsx  # Main task manager component
+├── hooks               # Custom React hooks
+├── lib                 # Utility functions
+├── public              # Static assets
+├── styles              # Additional styles
+├── types               # TypeScript type definitions
+├── components.json     # Shadcn UI configuration
+├── next.config.mjs     # Next.js configuration
+├── package.json        # Project dependencies
+├── pnpm-lock.yaml      # pnpm lock file
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── tsconfig.json       # TypeScript configuration
+```
+
+## Customization
+
+### Theme
+
+The application uses CSS variables for theming. You can customize colors and other design tokens in the `globals.css` file. The project supports both light and dark modes.
+
+### Components
+
+UI components are built with Shadcn UI, which provides a collection of accessible, reusable components. You can customize these components to match your design requirements.
+
+## Development
+
+### Adding New Features
+
+1. Create new components in the `components` directory
+2. Add new pages in the `app` directory
+3. Update types as needed in the `types` directory
+
+### Styling
+
+The project uses Tailwind CSS for styling. You can customize the theme in `tailwind.config.ts` and add utility classes in `globals.css`.
+
+## Building for Production
+
+```bash
+pnpm build
+```
+
+This will create an optimized production build of your application in the `.next` folder.
+
+## Running in Production
+
+```bash
+pnpm start
+```
+
+This will start the application in production mode.
+
+## License
+
+[MIT](LICENSE)
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Radix UI](https://www.radix-ui.com/)
